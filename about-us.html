@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trawell: travel recommendation website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="travel_recommendation.js"></script>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <div id="logo">
+                    <img src="/trawel-logo.png" alt="logo" width="100" height="60">
+                    <a href="travel_recommendation.html">Trawell</a>   
+                </div>
+
+                <div style="display: flex; gap: 26px;">
+                    <a href="travel_recommendation.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+
+                <div style="display: flex; gap: 4px;visibility: hidden">
+                    <input id="searchInput" type="text" style="padding: 15px 10px" placeholder="Enter a destination or keyword">
+                    <button id="searchButton" style="padding: 15px 10px">Search</button>
+                    <button id="resetButton" style="padding: 15px 10px">Reset</button>
+                </div>
+
+            </nav>
+            
+            <div id="hero">
+                <div 
+                    style="width: 50%;
+                    padding: 0 15%;
+                    background: linear-gradient(to right, 
+                    rgb(112,112,250, 0.8) 30%,
+                    rgba(0, 0, 255, 0)) 100%; "
+                    >
+                    <h1 class="heroHead">
+                        ABOUT US
+                    </h1>
+
+                    <p style="padding: 10px 0px; color:white;width: fit-content; height: fit-content;" >
+                        We are a team of passionate globetrotters and meticulous planners 
+                        dedicated to transforming your travel dreams into seamless, unforgettable 
+                        realities, believing every journey should be as unique as the traveler; 
+                        we don't just offer trips, we craft personalized itineraries based on your 
+                        passions—whether you're seeking a thrilling mountain ascent, the tranquility 
+                        of a secluded beach, or the immersion of a vibrant cultural hub—to remove the 
+                        complexity of planning so you can focus entirely on the joy of exploration.
+                    </p>
+
+                    <div style="display:flex; gap:16px;">
+                        <h2 style="color:white;">OUR TEAM</h2>
+                        <div class="team-card" style="display:flex;">
+                            <img src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-6/509437837_10035332416545024_7698153664036857427_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFABBFbOFETdM3PejS1XoQczz91enEk7ZnPP3V6cSTtmay4fQ8yjMF0ZzO14DZA4OrhJCk4_vC9DXK54neMzgd1&_nc_ohc=4B5XJRFPIu4Q7kNvwFfXlKV&_nc_oc=AdltSQeqtdqVCsH68tgpUwUFRfsO7N2Ny9HHF4xxczPm66ksrdRQ8XElGjJQU_AAA1xJjnByTnTlmqIrAGz5oJwL&_nc_zt=23&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=q_xwU3AkRK_ZmlL2FbBA5A&oh=00_AfjnkBl1B7E6lq2LhOZy1HqPN6W0VXlPYugHHSQ9bJ8mFA&oe=691D9B39" alt="" width="200">
+                            <div style="display:flex; flex-direction: column;">
+                                <h3>Ruji</h3>
+                                <p>CEO</p>
+                            </div>
+                        </div>
+                        <div class="team-card" style="display:flex;">
+                            <img src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-6/510275836_10026438290767770_5570836104107451920_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeElwzBvOibqLkWMEc8XHEQNAdZra0kItPEB1mtrSQi08S2d31CKT1KdqpGuWPV_X-iMhs7_mPEVCGllHBqMZw6I&_nc_ohc=i9ASXKbliQEQ7kNvwGg2l-z&_nc_oc=Adm7N5wST18ffS9Bvc-rKpYNz8EzkHRxa85GoKIUAMROK3SZ9bm5MS_VZnkqvJZ5V5MHlfK2OXR-FqJejknaTIpG&_nc_zt=23&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=ZwKG8DQHsACm_k400-KYbQ&oh=00_Afh0qVzWBk6sM-ytAXIxSPKW_s3MqSWCHvBXqPPRupkQ6A&oe=691DA105" alt="" width="200">
+                            <div style="display:flex; flex-direction: column;">
+                                <h3>Riju</h3>
+                                <p>CTO</p>
+                            </div>
+                        </div>
+                        <div class="team-card" style="display:flex;">
+                            <img src="https://scontent.fbkk2-7.fna.fbcdn.net/v/t39.30808-6/509269098_9997796006965332_363149955973912556_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEams8ZnU0M2VxQy6Jfa3IJSyCQ5HeToOxLIJDkd5Og7Ejri1UVfGzlcxx1Cc4D_XcSZDylEnydGYSLGKnv636J&_nc_ohc=fKL10GE0B1gQ7kNvwFVJaft&_nc_oc=AdnRiYCNMrfMdMg3GzNux76K-WrQBZNVo-35vwZmdjed1uF3ex4gMW3foRl61lFcfCoT58fHPS5TUWYiT-LePRCY&_nc_zt=23&_nc_ht=scontent.fbkk2-7.fna&_nc_gid=NM_9bPZC9qfbpBNrpaM7BQ&oh=00_Afg22W851_p0cxTz-zCwDF8P7dav8djiQBPharsHGzTRvA&oe=691DAF2C" alt="" width="200">
+                            <div style="display:flex; flex-direction: column;">
+                                <h3>Yam</h3>
+                                <p>CFO</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>

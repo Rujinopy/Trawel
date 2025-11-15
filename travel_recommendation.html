@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trawell: travel recommendation website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="travel_recommendation.js"></script>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <div id="logo">
+                    <img src="trawel-logo.png" alt="logo" width="100" height="60">
+                    <a href="travel_recommendation.html">Trawell</a>   
+                </div>
+
+                <div style="display: flex; gap: 26px;">
+                    <a href="travel_recommendation.html">Home</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+
+                <div style="display: flex; gap: 4px;">
+                    <input id="searchInput" type="text" style="padding: 15px 10px" placeholder="Enter a destination or keyword">
+                    <button id="searchButton" style="padding: 15px 10px">Search</button>
+                    <button id="resetButton" style="padding: 15px 10px">Reset</button>
+                </div>
+
+            </nav>
+            
+            <div id="hero">
+                <div 
+                    style="width: 50%;
+                    padding: 0 15%;
+                    background: linear-gradient(to right, 
+                    rgb(112,112,250, 0.8) 30%,
+                    rgba(0, 0, 255, 0)) 100%; "
+                    >
+                    <h1 class="heroHead">
+                        EXPLORE<br>
+                        DREAM<br>
+                        DESTINATION
+                    </h1>
+
+                    <p style="padding: 10px 0px; color:white;width: fit-content; height: fit-content;" >
+                        Uncover the world's hidden gems and iconic landmarks with our personalized travel 
+                        recommendations. From the majestic peaks of the Himalayas to the sun-kissed beaches 
+                        of the Caribbean, we help you design your perfect escape.
+                    </p>
+
+                    <button class="normalButton">BOOK NOW</button>
+
+
+                </div>
+                <div style="width: 50%;">
+                <ul id="displayPanel">
+                    
+                </ul>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

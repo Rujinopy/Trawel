@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trawell: travel recommendation website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="travel_recommendation.js"></script>
+  </head>
+  <body>
+    <div>
+      <nav>
+        <div id="logo">
+          <img src="/trawel-logo.png" alt="logo" width="100" height="60" />
+          <a href="travel_recommendation.html">Trawell</a>
+        </div>
+
+        <div style="display: flex; gap: 26px">
+          <a href="travel_recommendation.html">Home</a>
+          <a href="about-us.html">About Us</a>
+          <a href="contact-us.html">Contact Us</a>
+        </div>
+
+        <div style="display: flex; gap: 4px; visibility: hidden">
+          <input
+            id="searchInput"
+            type="text"
+            style="padding: 15px 10px"
+            placeholder="Enter a destination or keyword"
+          />
+          <button id="searchButton" style="padding: 15px 10px">Search</button>
+          <button id="resetButton" style="padding: 15px 10px">Reset</button>
+        </div>
+      </nav>
+
+      <div id="hero">
+        <div
+          style="
+          display:flex;
+          height: 100vh;
+            align-content: center;
+              justify-content: center;
+            padding: 15% 15%;
+            background: linear-gradient(
+                to right,
+                rgb(112, 112, 250, 0.8) 30%,
+                rgba(0, 0, 255, 0)
+              )
+              100%;
+
+          "
+        >
+          <h1 class="heroHead">CONTACT US</h1>
+        </div>
+        <form style="width: 20vw;" action="/submit-form-endpoint" method="POST">
+            <div>
+              <label style="color:white;" for="name">Name:</label><br />
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <br />
+
+            <div>
+              <label style="color:white;" for="email">Email:</label><br />
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+            <br />
+
+            <div>
+              <label style="color:white;" for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+            <br />
+
+            <button type="submit">Submit</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>
